@@ -1,0 +1,26 @@
+<launch>
+
+
+    <node pkg="aerial_manipulation" type="force_from_serial.py" name="force_from_serial.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+    <node pkg="aerial_manipulation" type="force_to_mode.py" name="force_to_mode.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+    <node pkg="aerial_manipulation" type="free_flight_trajectory.py" name="free_flight_trajectory.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+    <node pkg="aerial_manipulation" type="ik_publish_theta.py" name="ik_publish_theta.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+    <node pkg="aerial_manipulation" type="pitch_dynamics.py" name="pitch_dynamics.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+    <node pkg="aerial_manipulation" type="pose_publisher_vicon.py" name="pose_publisher_vicon.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+    <node pkg="aerial_manipulation" type="theta_to_serial.py" name="theta_to_serial.py" respawn="true" clear_params="true" output="screen">
+    </node>
+
+
+</launch>

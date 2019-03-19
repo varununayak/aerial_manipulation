@@ -1,0 +1,25 @@
+ard_device: "/dev/ttyUSB1"  #arduino is connected to this
+
+#Manipulator Design Parameters in SI units
+
+l1: 0.100
+l2: 0.300
+l3: 0.200
+
+dl1: 0.01
+dl2: 0.01
+
+
+#Home position of manipulator
+
+theta1_home: 0
+theta2_home: 90
+theta3_home: -90
+
+
+##Pitch Dynamics
+
+pitch_angle_reference: 7 #in degrees this reference above which the pitch dynamics controller gets triggered
+
+F_upperlimit: 2.5   #Schmitt trigger parameters
+F_lowerlimit: 1.5
