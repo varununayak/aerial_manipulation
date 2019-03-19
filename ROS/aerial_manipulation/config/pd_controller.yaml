@@ -1,0 +1,4 @@
+pitch_angle_reference: 7 #in degrees this reference above which the pitch dynamics controller gets triggered
+
+F_upperlimit: 2.5   #Schmitt trigger parameters
+F_lowerlimit: 1.5
